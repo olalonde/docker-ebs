@@ -8,4 +8,4 @@ RUN apk add --update-cache \
 ADD ebs.sh /aws/
 RUN chmod +x /aws/ebs.sh
 
-CMD [ "/aws/ebs.sh" ]
+ENTRYPOINT [ "/aws/ebs.sh" ]
